@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vplak Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header-top">
+    <div class="logo">
+        <a href="https://www.vplak.com/">
+            <img src="images/logo.png" alt="Vplak logo" title="India's Best Quality Computer, Laptop and Mobile Accessories Online Store">
+        </a>
+    </div>
+    </div>
+    <header class="header">MOST SELLING</header>
+        <div class="container">
+        <button type="button" id="left" class="arrows Left"></button>
+        <button type="button" id="right" class="arrows right"></button>
+        <div class="slide">
+            <div id="1" class="img1 img"><img src="images/image-1.jpg" alt="Marshall" height="150" width="150">
+                <p class="img1Price After">Rs. 45800</p>
+                <a href="marshall-woburn-ii-wireless-speaker-p1488" class="img1_name">
+                Marshall Woburn 2 Wireless Bluetooth Speaker
+            </a>
+            </div>
+            <div id="2" class="img2 img"><img src="images/image-2.jpg" alt="Ravtek" height="150" width="150">
+                <p class="img2Price After">Rs. 14999</p>
+                <a href="ravtek-x-10-active-noise-cancelling-headphone-p1867" class="img2_name">
+                Ravtek X10 Active Noise Cancelling Headphone
+            </a>
+            </div>
+            <div id="3" class="img3 img"><img src="images/image-3.jpg" alt="JBL Partybox" height="150" width="150">
+                <p class="img3Price After">Rs. 82800</p>
+                 <a href="jbl-partybox-1000-bluetooth-speaker-p2377" class="img3_name">
+                JBL Partybox 1000 Powerful Bluetooth Party Speaker
+            </a>
+            </div>
+            <div id="4" class="img4 img"><img src="images/image-4.jpg" alt="JBL Bar" height="150" width="150">
+                <p class="img4Price After">Rs. 96800</p>
+                <a href="jbl-bar-9.1-wireless-surround-soundbar-p2483" class="img4_name">
+                JBL Bar 9.1 True Wireless Surround Sound Soundbar With Dolby Atmos, Detachable Wireless Speakers, Ultra HD4K Pass Through &amp; Built-in WiFi (820 Watts, Black)
+            </a>
+            </div>
+            <div id="5" class="img5 img"><img src="images/image-5.jpg" alt="EGate L9" height="150" width="150">
+                <p class="img5Price After">Rs. 21790</p>
+                <a href="egate-p531-android-fhd-led-projector-p2557" class="img5_name">
+                EGate L9 Pro-Max Android 9.0 Projector for Home 4K, Full HD 1080p Native 690 ANSI 7500 Lumens, Harmonized Speakers, WiFi, Bluetooth, 4D 45° Digital Keystone, | (E10k62) I White
+            </a>
+            </div>
+            <div id="6" class="img6 img"><img src="images/image-6.jpg" alt="Harman Kardon" height="150" width="150">
+                <p class="img6Price After">Rs. 14899</p>
+                <a href="harman-kardon-onyx-studio-6-bluetooth-speakers-with-handle-p2815" class="img6_name">
+                Harman Kardon Onyx Studio 6 Wireless Speaker
+            </a>
+            </div>
+            <div id="7" class="img7 img"><img src="images/image-7.jpg" alt="Denon Avr" height="150" width="150">
+                <p class="img7Price After">Rs. 78999</p>
+                <a href="denon-avr-x1600h-p2885" class="img7_name">
+                Denon AVR-X1600H 7.2 Channel 4K Ultra HD AV Receiver with 3D Audio, AirPlay 2, Alexa and HEOS Built-in
+            </a>
+            </div>
+            <div id="8" class="img8 img"><img src="images/image-8.jpg" alt="Anker Nebula" height="150" width="150">
+                <p class="img8Price After">Rs. 48999</p>
+               <a href="anker-nebula-mars-2-projector-p2925" class="img8_name">
+                Anker Nebula Mars II 300 ANSI Lumen Portable Projector
+            </a>
+            </div>
+            <div class="img9 img"><img src="images/image-9.jpg" alt="SanDisk Extreme" height="150" width="150">
+                <p class="img9Price After">Rs. 65999</p>
+                <a href="sandisk-512-cf-type-b-memory-card-p2987" class="img9_name">
+                SanDisk Extreme Pro CFexpress 512 GB XQD Card Class 10 1700 MB/s Memory Card
+            </a>
+            </div>
+            <div class="img10 img"><img src="images/image-10.jpg" alt="XGIMI Halo" height="150" width="150">
+                <p class="img10Price After">Rs. 87400</p>
+                <a href="xgimi-halo-projector-p3071" class="img10_name">
+                XGIMI Halo 1080p Full HD Smart Mini Projector with DLP, 800 ANSI Lumens, Android TV 9.0 and Harman Kardon Speakers
+            </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p class="high">
+            <h1>Handpicked collection of quality stuff</h1>
+        </p>
+        <p class="low">
+            <h3>Every product selling on our website is selected after doing a lot of research about that product's quality and durability</h3>
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('#right').click(function() {
+                $('#1').hide();
+                $('#2').hide();
+                $('#3').hide();
+                $('#4').hide();
+                $('#5').hide();
+                $('#6').hide();
+                $('#7').hide();
+            });
+
+            $('#left').click(function() {
+                $('#1').show();
+                $('#2').show();
+                $('#3').show();
+                $('#4').show();
+                $('#5').show();
+                $('#6').show();
+                $('#7').show();
+            });
+
+        })
+    </script>
+</body>
+
+</html>
